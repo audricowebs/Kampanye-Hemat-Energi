@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data & Aksi - Kampanye Hemat Energi</title>
+    <link rel="stylesheet" href="style.css?v=9">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="asset/logo-wikrama.png" alt="Logo SMK Wikrama">
+                <span>Hemat Energi</span>
+            </a>
+            <nav aria-label="Navigasi Utama">
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="data-aksi.html" class="active">Data & Aksi</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-section">
+        <img src="asset/landingpage.avif" class="hero-bg-img" alt="">
+        <div class="hero-overlay"></div>
+
+        <div class="container section-content">
+            <!-- Header Halaman -->
+            <header class="page-header">
+                <h1 class="page-title">Data Kuesioner & Rekomendasi Aksi</h1>
+                <p class="page-subtitle">
+                    Hasil survei perilaku hemat energi dari 636 siswa kelas XI SMK Wikrama Bogor, dipadukan langsung dengan panduan tindakan nyata di lingkungan sekolah.
+                </p>
+            </header>
+
+            <!-- 1. Ringkasan Metrik Data -->
+            <section class="stats-grid" aria-label="Ringkasan Statistik">
+                <div class="stat-card">
+                    <span class="stat-label">Tingkat partisipasi</span>
+                    <div class="stat-number">99.4<span class="stat-unit">%</span></div>
+                    <p class="stat-meta">636 dari 639 siswa terdata</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Rata-rata skor</span>
+                    <div class="stat-number">3.36<span class="stat-unit">/ 4.00</span></div>
+                    <p class="stat-meta">Kategori Baik menuju Sangat Baik</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Kategori tertinggi</span>
+                    <div class="stat-number">59.4<span class="stat-unit">%</span></div>
+                    <p class="stat-meta">378 siswa di tingkat Sangat Baik</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Fokus peningkatan</span>
+                    <div class="stat-number">Gawai & Tegur Teman</div>
+                    <p class="stat-meta">Skor 3.22 butuh pembiasaan bersama</p>
+                </div>
+            </section>
+
+            <!-- 2. Bagian Grafik & Analisis Data -->
+            <section class="data-analysis-grid">
+                <div class="chart-box">
+                    <div class="chart-header">
+                        <div>
+                            <h2 class="chart-title">Rata-rata Skor 10 Kebiasaan Energi</h2>
+                            <p class="chart-desc">Skala 1 (Jarang) hingga 4 (Selalu) dari survei 636 siswa.</p>
+                        </div>
+                        <div class="chart-controls">
+                            <button type="button" class="btn-filter active" id="btnFilterAll">Semua kebiasaan</button>
+                            <button type="button" class="btn-filter" id="btnFilterFocus">Fokus peningkatan</button>
+                        </div>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="chartButir"></canvas>
+                    </div>
+                </div>
+
+                <div class="insight-box">
+                    <h2 class="insight-title">Temuan Kuesioner</h2>
+                    <ul class="insight-list">
+                        <li>
+                            <span class="insight-category">Capaian Tertinggi</span>
+                            <strong>Praktik hemat energi sehari-hari (3.51)</strong>
+                            <p>Kesadaran dasar untuk berhemat listrik dan air sudah tertanam baik dalam aktivitas sehari-hari siswa.</p>
+                        </li>
+                        <li>
+                            <span class="insight-category">Perlu Ditingkatkan</span>
+                            <strong>Batasi penggunaan gawai & laptop (3.22)</strong>
+                            <p>Pembatasan pemakaian laptop dan gawai saat tidak diperlukan masih sering terabaikan di kelas.</p>
+                        </li>
+                        <li>
+                            <span class="insight-category">Perlu Ditingkatkan</span>
+                            <strong>Berani menegur teman hemat listrik (3.22)</strong>
+                            <p>Keberanian mengingatkan teman sebaya yang membiarkan listrik menyala masih memerlukan dorongan bersama.</p>
+                        </li>
+                    </ul>
+                    <div class="insight-footer">
+                        <p>Kesimpulan: Niat pribadi sudah baik, namun pengelolaan gawai dan budaya saling mengingatkan butuh pembiasaan kolektif.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Rekomendasi Aksi Nyata (Terhubung dengan Data) -->
+            <section class="action-section">
+                <div class="section-heading-row">
+                    <div>
+                        <h2 class="section-title">Rekomendasi Aksi Nyata</h2>
+                        <p class="section-desc">
+                            Langkah terukur untuk menjawab butir kuesioner yang membutuhkan perbaikan di sekolah.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid-3">
+                    <article class="card action-card">
+                        <h3>Di Ruang Kelas</h3>
+                        <span class="action-target">Menjawab: Mematikan listrik kosong, pencahayaan alami & piket</span>
+                        <ul class="action-list">
+                            <li>Matikan lampu, AC, dan kipas saat ruangan kosong atau jam istirahat.</li>
+                            <li>Buka tirai jendela di siang hari untuk memanfaatkan pencahayaan alami.</li>
+                            <li>Piket kelas memastikan seluruh sakelar dan proyektor mati sebelum pulang.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card action-card">
+                        <h3>Penggunaan Gawai & Lab</h3>
+                        <span class="action-target">Menjawab: Batasi penggunaan gawai dan cabut charger</span>
+                        <ul class="action-list">
+                            <li>Aktifkan mode hemat daya pada laptop dan ponsel saat jam pelajaran.</li>
+                            <li>Cabut charger dari stopkontak segera setelah baterai mencapai 100%.</li>
+                            <li>Matikan komputer lab dan layar monitor setelah sesi praktikum selesai.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card action-card">
+                        <h3>Budaya Saling Mengingatkan</h3>
+                        <span class="action-target">Menjawab: Keberanian menegur dan mengajak teman</span>
+                        <ul class="action-list">
+                            <li>Ingatkan teman dengan sopan saat melihat lampu atau peralatan listrik menyala tanpa dipakai.</li>
+                            <li>Jadikan keteladanan hemat energi sebagai kebiasaan bersama di rombel dan rayon.</li>
+                            <li>Awali dari tindakan mandiri setiap hari agar terbentuk kedisiplinan lingkungan.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 4. Widget Komitmen Harian Siswa -->
+            <section class="habit-tracker-box" aria-label="Komitmen Harian Siswa">
+                <div class="tracker-header">
+                    <div>
+                        <h2 class="tracker-title">Komitmen Harian</h2>
+                        <p class="tracker-subtitle">Tandai aksi yang telah kamu lakukan hari ini di sekolah.</p>
+                    </div>
+                    <div class="tracker-progress-badge" id="trackerBadge">
+                        <span id="trackerCount">0</span> / 4 selesai
+                    </div>
+                </div>
+
+                <div class="tracker-checklist" id="trackerList">
+                    <label class="tracker-item">
+                        <input type="checkbox" data-id="h1">
+                        <span class="checkmark"></span>
+                        <span class="tracker-text">Mematikan lampu atau kipas saat kelas kosong</span>
+                    </label>
+                    <label class="tracker-item">
+                        <input type="checkbox" data-id="h2">
+                        <span class="checkmark"></span>
+                        <span class="tracker-text">Mencabut charger setelah baterai penuh</span>
+                    </label>
+                    <label class="tracker-item">
+                        <input type="checkbox" data-id="h3">
+                        <span class="checkmark"></span>
+                        <span class="tracker-text">Memanfaatkan cahaya matahari alami di siang hari</span>
+                    </label>
+                    <label class="tracker-item">
+                        <input type="checkbox" data-id="h4">
+                        <span class="checkmark"></span>
+                        <span class="tracker-text">Mengingatkan teman atau memeriksa sakelar sebelum pulang</span>
+                    </label>
+                </div>
+                <div class="tracker-feedback" id="trackerFeedback">
+                    Tandai komitmen harianmu untuk berkontribusi menjaga energi sekolah.
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Kampanye Hemat Energi • SMK Wikrama Bogor</p>
+            <p class="footer-meta">Kelompok 6 • PPLG XI-3</p>
+        </div>
+    </footer>
+
+    <script src="data-perilaku-energi.js"></script>
+    <script src="script.js?v=9"></script>
+</body>
+</html>

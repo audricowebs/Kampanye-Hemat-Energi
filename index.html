@@ -3,36 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kampanye Hemat Energi - Sekolah Hijau</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kampanye Hemat Energi - SMK Wikrama Bogor</title>
+    <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
     <header class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">
-    <img src="asset\logo-wikrama.png" class="logo-img">Hemat<span>Energi</span></a>
-            <nav>
+            <a href="index.html" class="logo">
+                <img src="asset/logo-wikrama.png" alt="Logo SMK Wikrama">
+                <span>Hemat Energi</span>
+            </a>
+            <nav aria-label="Navigasi Utama">
                 <ul class="nav-links">
-                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="data-aksi.html">Data & Aksi</a></li>
                     <li><a href="tentang.html">Tentang</a></li>
-                    <li><a href="">Data & Fakta</a></li>
-                    <li><a href="">Aksi & Rekomendasi</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="landing-page">
-        <img src="asset/landingpage.avif" class="hero-bg-img">
+    <main class="main-section">
+        <img src="asset/landingpage.avif" class="hero-bg-img" alt="">
         <div class="hero-overlay"></div>
 
-        <div class="container hero-content">
-            <h1>Energi <span>Terbatas</span><br>Pengguna Harus <span>Cerdas</span></h1>
-            <p><span>Mulailah</span> langkah kecil dari <span>lingkungan sekolah</span> untuk <span>masa depan</span> <br>bumi yang lebih <span>indah</span>.</p>
-            <div class="hero-buttons">
-                <a href="about.html" class="btn btn-primary">Pelajari Lebih Lanjut</a>
-            </div>
+        <div class="container section-content">
+            <!-- Hero Section -->
+            <section class="hero-block">
+                <div class="hero-text-wrap">
+                    <h1 class="hero-title">Energi terbatas, pengguna harus cerdas</h1>
+                    <p class="hero-desc">
+                        Gerakan pelestarian energi di lingkungan sekolah yang berakar dari data survei 636 siswa kelas XI SMK Wikrama Bogor. Langkah kecil bersama hari ini untuk masa depan bumi.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="data-aksi.html" class="btn">Eksplor Data & Aksi →</a>
+                        <a href="tentang.html" class="btn btn-secondary">Tentang Tim Kami</a>
+                    </div>
+                </div>
+
+                <!-- Quick Stats Strip -->
+                <div class="hero-stats-strip">
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-value">636</span>
+                        <span class="hero-stat-label">Siswa terdata</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-value">99.4%</span>
+                        <span class="hero-stat-label">Partisipasi survei</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-value">3.36</span>
+                        <span class="hero-stat-label">Skor rata-rata (skala 4)</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-value">3 Pilar</span>
+                        <span class="hero-stat-label">Rekomendasi aksi</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mengapa Kampanye Ini Penting -->
+            <section class="home-pillars-section">
+                <div class="section-heading-center">
+                    <h2 class="section-title">Mengapa Kampanye Ini Penting?</h2>
+                    <p class="section-desc">
+                        Membangun budaya hemat listrik dan air yang dimulai dari kebiasaan sederhana di ruang kelas hingga lingkungan sekitar.
+                    </p>
+                </div>
+
+                <div class="grid-3">
+                    <article class="card pillar-card">
+                        <div class="pillar-icon">📊</div>
+                        <h3 class="pillar-title">Kajian Berbasis Data</h3>
+                        <p class="pillar-desc">
+                            Mengukur kebiasaan nyata siswa di kelas, lab komputer, dan rumah melalui angket 10 butir tervalidasi dengan partisipasi 99.4%.
+                        </p>
+                    </article>
+
+                    <article class="card pillar-card">
+                        <div class="pillar-icon">🎯</div>
+                        <h3 class="pillar-title">Evaluasi Tepat Sasaran</h3>
+                        <p class="pillar-desc">
+                            Menemukan bahwa pembatasan gawai (P04) dan keberanian menegur teman (P09) merupakan dua area yang paling membutuhkan pembiasaan bersama.
+                        </p>
+                    </article>
+
+                    <article class="card pillar-card">
+                        <div class="pillar-icon">🌱</div>
+                        <h3 class="pillar-title">Solusi Praktis & Nyata</h3>
+                        <p class="pillar-desc">
+                            Menyediakan panduan langkah konkret yang dapat diterapkan langsung oleh siswa, petugas piket, dan seluruh warga sekolah setiap hari.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- CTA Card Menuju Data & Aksi -->
+            <section class="home-cta-card">
+                <div class="home-cta-text">
+                    <h2>Eksplorasi Data & Ikuti Komitmen Harian</h2>
+                    <p>
+                        Lihat grafik interaktif rata-rata skor per butir dan tandai komitmen hemat energi yang telah kamu terapkan hari ini di sekolah.
+                    </p>
+                </div>
+                <div class="home-cta-action">
+                    <a href="data-aksi.html" class="btn">Buka Halaman Data & Aksi →</a>
+                </div>
+            </section>
         </div>
-    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Kampanye Hemat Energi • SMK Wikrama Bogor</p>
+            <p class="footer-meta">Kelompok 6 • PPLG XI-3</p>
+        </div>
+    </footer>
 </body>
 </html>
